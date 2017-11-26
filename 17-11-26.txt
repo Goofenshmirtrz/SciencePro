@@ -444,3 +444,12 @@
 {light:0,Voltage:2.05,PH:7.17}
 {light:0,Voltage:2.05,PH:7.17}
 {light:4667,Voltage:2.05,PH:7.18}
+{light:4521,Voltage:2.05,PH:7.16}
+{light:4507,Voltage:2.05,PH:7.16}
+{light:4507,Voltage:2.05,PH:7.16}
+{light:4493,Voltage:2.04,PH:7.16}
+{light:4507,Voltage:2.05,PH:7.16}
+{light:4493,Voltage:2.05,PH:7.16}
+{light:4521,Voltage:2.04,PH:7.16}
+{light:4493,Voltage:2.04,PH:7.16}
+{light:4479,Voltage:2.04,PH:7.15}
