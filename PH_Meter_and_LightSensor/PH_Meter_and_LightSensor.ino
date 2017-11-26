@@ -44,11 +44,11 @@ void loop(void)
   }
   if(millis() - printTime > printInterval)   //Every 800 milliseconds, print a numerical, convert the state of the LED indicator
   {
-    Serial.print("{light:");
+    Serial.print("{\"light\":");
     Serial.print(TSL2561.readVisibleLux());
-    Serial.print(",Voltage:");
+    Serial.print(",\"Voltage\":");
     Serial.print(voltage,2);
-    Serial.print(",PH:");
+    Serial.print(",\"PH\":");
     Serial.print(pHValue,2);
     Serial.println("}");
     digitalWrite(LED,digitalRead(LED)^1);
