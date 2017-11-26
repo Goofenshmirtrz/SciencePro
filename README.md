@@ -1,7 +1,5 @@
-# SciencePro
-
-School Science Project
-### Gaol
+# School Science Project
+### Goal
 
 ### Description
 
