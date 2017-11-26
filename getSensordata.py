@@ -14,5 +14,5 @@ while(True):
     sensors_data.replace('\r\n','')
     data = json.loads(sensors_data)
     data["Date"] = datetime.datetime.now().isoformat(' ', timespec='minutes')
-    data_file.write(json.dumps(data))
+    data_file.write(json.dumps(data) + "\n")
     data_file.flush()
