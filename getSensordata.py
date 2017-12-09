@@ -6,10 +6,14 @@ Description: Reads data from sensors connected to the Arduino.
 import serial
 import datetime
 import json
-port = serial.Serial("COM4") #Port may vary.
+import os
+port = serial.Serial("COM5") #Port may vary.
 todays_date = datetime.datetime.today().strftime("%m-%d-%y");
-data_file = open(todays_date + ".txt",'a')
 while(True): 
+    if os.path.isfile(todays_date + ".txt"):
+        data_file = open(todays_date + ".txt",'a')
+    else:
+        data_file = open(todays_date + ".txt",'w')
     sensors_data = port.readline().decode("utf-8")
     sensors_data.replace('\r\n','')
     data = json.loads(sensors_data)
